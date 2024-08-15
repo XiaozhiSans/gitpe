@@ -20,7 +20,7 @@ if %enableAs%==true (
 if %signKeyType%=="ssh" (
     git config --global gpg.format ssh
     git config --global user.signingKey ~/.ssh/id_rsa
-    git config gpg.ssh.allowedSignersFile "$HOME/.config/git/allowed_signers"
+    git config --global gpg.ssh.allowedSignersFile "$HOME/.config/git/allowed_signers"
 )
 :: else (
     :: 我没怎么用过gpg啊 不知道默认路径 反正我也不用gpgKey 先咕咕咕(
